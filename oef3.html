@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Spel-sessie Wingspan</title>
+    <link rel="stylesheet" href="css/oef3.css">
+</head>
+<body>
+
+    <h1>Spel-sessie Wingspan</h1>
+
+    <div class="header">
+        <img src="images/1.jpeg" alt="Wingspan spel">
+    </div>
+
+    <form action="verwerk.html" method="get">
+
+        <div class="row">
+            <label for="datum">Datum:</label>
+            <input type="date" id="datum" name="datum" required>
+        </div>
+
+        <div class="row">
+            <label for="start">Start:</label>
+            <input type="number" id="start" name="start" min="0" max="23" required>
+
+            <label for="tijdsduur" class="inline-label">Tijdsduur:</label>
+            <input type="number" id="tijdsduur" name="tijdsduur" min="1" max="12" required>
+        </div>
+
+        <div class="row">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="row">
+            <label>Complexiteit:</label>
+            <input type="range" name="complexiteit" min="1" max="10">
+        </div>
+
+        <div class="row">
+            <label>Geluk:</label>
+            <input type="range" name="geluk" min="1" max="10">
+        </div>
+
+        <div class="row">
+            <label>Strategie:</label>
+            <input type="range" name="strategie" min="1" max="10">
+        </div>
+
+        <div class="row">
+            <label for="beschrijving">Beschrijving:</label>
+            <textarea id="beschrijving" name="beschrijving" rows="4"></textarea>
+        </div>
+
+        <div class="row">
+            <label>Aantal sterren:</label>
+            <div class="stars">
+                <label><input type="radio" name="sterren" value="1"> ☆</label>
+                <label><input type="radio" name="sterren" value="2"> ☆☆</label>
+                <label><input type="radio" name="sterren" value="3"> ☆☆☆</label>
+                <label><input type="radio" name="sterren" value="4"> ☆☆☆☆</label>
+                <label><input type="radio" name="sterren" value="5"> ☆☆☆☆☆</label>
+            </div>
+        </div>
+
+        <button type="submit">Bewaar</button>
+
+    </form>
+
+</body>
+</html>
